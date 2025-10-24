@@ -1,0 +1,8 @@
+/* source('../..'); */
+@import 'tailwindcss';
+@import '@/styles/theme.css';
+@import '@/styles/base.css' layer(base);
+@import '@/styles/components.css' layer(components);
+@import '@/styles/utilities.css' layer(utilities);
+
+@plugin '@tailwindcss/typography';

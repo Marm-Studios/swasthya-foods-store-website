@@ -1,0 +1,31 @@
+{
+  "name": "swasthyafoods-site",
+  "version": "1.0.0",
+  "description": "",
+  "packageManager": "pnpm@10.17.0",
+  "type": "module",
+  "scripts": {
+    "dev:vite": "vite",
+    "build:vite": "vite build",
+    "dev:shopify": "shopify theme dev --store 1s00vn-py.myshopify.com",
+    "dev": "concurrently -r -k -P 'shopify theme dev {@}' 'vite'",
+    "cleanup": "node scripts/cleanup-assets.cjs",
+    "merge": "node scripts/merge-dist-to-assets.js",
+    "build": "pnpm run build:vite && pnpm cleanup && pnpm merge",
+    "push": "shopify theme push",
+    "deploy": "pnpm run build && shopify theme push"
+  },
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.19",
+    "@tailwindcss/vite": "^4.1.13",
+    "autoprefixer": "^10.4.21",
+    "concurrently": "^9.2.1",
+    "tailwindcss": "^4.1.13",
+    "vite": "^7.1.6",
+    "vite-plugin-shopify": "^4.0.2"
+  },
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "path": "^0.12.7"
+  }
+}

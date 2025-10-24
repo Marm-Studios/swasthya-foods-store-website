@@ -1,0 +1,41 @@
+:root {
+  --background-color: #fefefe;
+  --navbar-color: #dbd2c9;
+  --header-color: #dbd2c9;
+  --footer-color: #a97647;
+  --utility-bar-color: #663523;
+
+  /* #383736 */
+  /* #37a850 */
+
+  --foreground-pri-color: #20201f;
+  --heading-pri-color: #35593c;
+  --heading-sec-color: #37a850;
+  --heading-pro-hovercolor: #20201f;
+
+  --menu-icon-size: 2.5rem;
+  --header-icon-size: 2.25rem;
+  --header-large-icon-size: 2.75rem;
+  --footer-icon-size: 2rem;
+}
+
+@theme inline {
+  --color-background: var(--background-color);
+  --color-navbar: var(--navbar-color);
+  --color-header: var(--header-color);
+  --color-footer: var(--footer-color);
+  --color-utility-bar: var(--utility-bar-color);
+
+  --color-foreground-pri: var(--foreground-pri-color);
+  --color-heading-pri: var(--heading-pri-color);
+  --color-heading-sec: var(--heading-sec-color);
+  --color-heading-pri-hover: var(--heading-pro-hovercolor);
+
+  --spacing-menu-icon-size: var(--menu-icon-size);
+  --spacing-header-icon-size: var(--header-icon-size);
+  --spacing-header-large-icon-size: var(--header-large-icon-size);
+  --spacing-footer-icon-size: var(--footer-icon-size);
+}
+
+@layer base {
+}

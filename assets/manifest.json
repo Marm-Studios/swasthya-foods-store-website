@@ -1,0 +1,16 @@
+{
+  "frontend/entrypoints/main.css": {
+    "file": "v-main.D2SXeYqT.min.css",
+    "src": "frontend/entrypoints/main.css",
+    "isEntry": true,
+    "names": [
+      "main.css"
+    ]
+  },
+  "frontend/entrypoints/main.js": {
+    "file": "v-main.B5Qt9EMX.min.js",
+    "name": "main",
+    "src": "frontend/entrypoints/main.js",
+    "isEntry": true
+  }
+}
