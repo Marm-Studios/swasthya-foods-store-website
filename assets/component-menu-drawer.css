@@ -34,7 +34,7 @@ menu-drawer > details[open] > summary::before {
   top: 100%;
   width: 100%;
   padding: 0;
-  background-color: rgb(var(--color-background));
+  /* background-color: rgb(var(--color-background)); */
   overflow-x: hidden;
   filter: drop-shadow(
     var(--drawer-shadow-horizontal-offset) var(--drawer-shadow-vertical-offset) var(--drawer-shadow-blur-radius)
@@ -108,7 +108,7 @@ details[open].menu-opening > .menu-drawer__submenu {
   padding-right: 5.2rem;
 }
 
-.menu-drawer__menu-item--active,
+/* .menu-drawer__menu-item--active,
 .menu-drawer__menu-item:focus,
 .menu-drawer__close-button:focus,
 .menu-drawer__menu-item:hover,
@@ -119,7 +119,7 @@ details[open].menu-opening > .menu-drawer__submenu {
 
 .menu-drawer__menu-item--active:hover {
   background-color: rgba(var(--color-foreground), 0.08);
-}
+} */
 
 .js .menu-drawer__menu-item .icon-caret {
   display: none;

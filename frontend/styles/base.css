@@ -1,5 +1,5 @@
 :root {
-  --background-color: #fefefe;
+  --background-pri-color: #fefefe;
   --navbar-color: #dbd2c9;
   --header-color: #dbd2c9;
   --footer-color: #a97647;
@@ -14,13 +14,13 @@
   --heading-pro-hovercolor: #20201f;
 
   --menu-icon-size: 2.5rem;
-  --header-icon-size: 2.25rem;
+  --header-icon-size: 2.75rem;
   --header-large-icon-size: 2.75rem;
   --footer-icon-size: 2rem;
 }
 
 @theme inline {
-  --color-background: var(--background-color);
+  --color-background-pri: var(--background-pri-color);
   --color-navbar: var(--navbar-color);
   --color-header: var(--header-color);
   --color-footer: var(--footer-color);
@@ -38,4 +38,11 @@
 }
 
 @layer base {
+  html {
+    @apply scroll-smooth!;
+  }
+
+  body {
+    @apply bg-background-pri! text-foreground-pri!;
+  }
 }

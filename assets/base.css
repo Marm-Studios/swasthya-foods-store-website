@@ -496,13 +496,13 @@ h6:empty {
   font-family: inherit;
 }
 
-.link--text {
+/* .link--text {
   color: rgb(var(--color-foreground));
 }
 
 .link--text:hover {
   color: rgba(var(--color-foreground), 0.75);
-}
+} */
 
 .link-with-icon {
   display: inline-flex;
@@ -643,10 +643,10 @@ h3 .icon-arrow,
   height: 20px;
 }
 
-.svg-wrapper > svg {
+/* .svg-wrapper > svg {
   height: 100%;
   width: 100%;
-}
+} */
 
 /* base-details-summary */
 summary {
@@ -2248,8 +2248,8 @@ input[type='checkbox'] {
   text-align: center;
   padding: 1rem 0;
   margin: 0;
-  letter-spacing: 0.1rem;
-  min-height: 3.8rem;
+  /* letter-spacing: 0.1rem; */
+  /* min-height: 3.8rem; */
 }
 
 .announcement-bar-slider--fade-in-next .announcement-bar__message,
@@ -2343,12 +2343,12 @@ input[type='checkbox'] {
 .header-wrapper {
   display: block;
   position: relative;
-  background-color: rgb(var(--color-background));
+  /* background-color: rgb(var(--color-background)); */
 }
 
-.header-wrapper--border-bottom {
+/* .header-wrapper--border-bottom {
   border-bottom: 0.1rem solid rgba(var(--color-foreground), 0.08);
-}
+} */
 
 .header {
   display: grid;
@@ -2523,31 +2523,31 @@ input[type='checkbox'] {
   justify-content: center;
 }
 
-.header__icon {
+/* .header__icon {
   color: rgb(var(--color-foreground));
-}
+} */
 
 .header__icon span {
   height: 100%;
 }
 
-.header__icon .svg-wrapper {
+/* .header__icon .svg-wrapper {
   width: 44px;
   height: 44px;
-}
+} */
 
 .header__icon::after {
   content: none;
 }
 
-.header__icon:hover .icon,
+/* .header__icon:hover .icon,
 .modal__close-button:hover .icon {
   transform: scale(1.07);
-}
+} */
 
 .header__icon .icon {
-  height: 2rem;
-  width: 2rem;
+  /* height: 2rem;
+  width: 2rem; */
   fill: none;
   vertical-align: middle;
 }
@@ -2559,10 +2559,10 @@ input[type='checkbox'] {
   padding: 0;
 }
 
-.header__icon {
+/* .header__icon {
   height: 4.4rem;
   width: 4.4rem;
-}
+} */
 
 .header__icon--cart {
   position: relative;
@@ -2573,11 +2573,11 @@ input[type='checkbox'] {
   content: '';
   top: 100%;
   left: 0;
-  height: calc(var(--viewport-height, 100vh) - (var(--header-bottom-position, 100%)));
-  width: 100%;
-  display: block;
+  /* height: calc(var(--viewport-height, 100vh) - (var(--header-bottom-position, 100%))); */
+  /* width: 100%; */
+  /* display: block; */
   position: absolute;
-  background: rgba(var(--color-foreground), 0.5);
+  /* background: rgba(var(--color-foreground), 0.5); */
 }
 
 .header__icon--account shop-user-avatar {
@@ -2764,7 +2764,7 @@ details[open] > .header__submenu {
 
 /* Header menu */
 .header__inline-menu {
-  margin-left: -1.2rem;
+  /* margin-left: -1.2rem; */
   grid-area: navigation;
   display: none;
 }
@@ -2797,14 +2797,14 @@ details[open] > .header__submenu {
 }
 
 .header__menu-item {
-  padding: 1.2rem;
+  /* padding: 1.2rem; */
   text-decoration: none;
-  color: rgba(var(--color-foreground), 0.75);
+  /* color: rgba(var(--color-foreground), 0.75); */
 }
 
-.header__menu-item:hover {
+/* .header__menu-item:hover {
   color: rgb(var(--color-foreground));
-}
+} */
 
 .header__menu-item span {
   transition: text-decoration var(--duration-short) ease;
@@ -2812,7 +2812,9 @@ details[open] > .header__submenu {
 
 .header__menu-item:hover span {
   text-decoration: underline;
-  text-underline-offset: 0.3rem;
+  /* text-underline-offset: 0.3rem; */
+  text-underline-offset: 0.35rem;
+  /* text-decoration-thickness: 0.1rem; */
 }
 
 details[open] > .header__menu-item {
@@ -2829,14 +2831,14 @@ details[open] > .header__menu-item .icon-caret {
 
 .header__active-menu-item {
   transition: text-decoration-thickness var(--duration-short) ease;
-  color: rgb(var(--color-foreground));
+  /* color: rgb(var(--color-foreground));
   text-decoration: underline;
-  text-underline-offset: 0.3rem;
+  text-underline-offset: 0.3rem; */
 }
 
-.header__menu-item:hover .header__active-menu-item {
+/* .header__menu-item:hover .header__active-menu-item {
   text-decoration-thickness: 0.2rem;
-}
+} */
 
 .header__submenu {
   transition: opacity var(--duration-default) ease, transform var(--duration-default) ease;

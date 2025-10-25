@@ -1,0 +1,30 @@
+@layer utilities {
+  /* #region HEADER-ICONS */
+  .header__icons {
+    @apply flex! flex-row! justify-self-end! justify-center! items-center! gap-2! sm:gap-3! md:gap-5!;
+  }
+
+  .header__icon {
+    @apply h-auto! w-auto!;
+  }
+
+  .header-icon_ct {
+    @apply h-header-icon-size! w-header-icon-size!;
+  }
+
+  .header-icon_ct > .icon-hamburger,
+  .header-icon_ct > .icon-close {
+    @apply h-header-icon-size! w-header-icon-size!;
+  }
+
+  .header-icon_ct:hover {
+    @apply text-footer!;
+  }
+  /* #endregion */
+
+  .line-separator_ct {
+    @apply bg-foreground-pri/25! m-0! my-4!;
+    /* border-color: rgba(var(--foreground-pri-color), 0.5) !important; */
+    /* color: rgba(var(--foreground-pri-color), 0.75) !important; */
+  }
+}
