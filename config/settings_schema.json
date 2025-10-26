@@ -1301,6 +1301,38 @@
     ]
   },
   {
+    "name": "t:settings_schema.contact_information.name",
+    "settings": [
+      {
+        "type": "paragraph",
+        "content": "t:settings_schema.contact_information.settings.paragraph.content"
+      },
+      {
+        "type": "text",
+        "id": "contact_address_text",
+        "label": "t:settings_schema.contact_information.settings.contact_address_text.label"
+      },
+      {
+        "type": "text",
+        "id": "contact_address_link",
+        "label": "t:settings_schema.contact_information.settings.contact_address_link.label",
+        "info": "Enter a map or directions URL (optional). Example: https://maps.google.com/?q=address"
+      },
+      {
+        "type": "text",
+        "id": "contact_phone",
+        "label": "t:settings_schema.contact_information.settings.contact_phone.label",
+        "info": "Use international format where possible, e.g. +1 555 555 5555"
+      },
+      {
+        "type": "text",
+        "id": "contact_email",
+        "label": "t:settings_schema.contact_information.settings.contact_email.label",
+        "info": "Enter the contact email address"
+      }
+    ]
+  },
+  {
     "name": "t:settings_schema.social-media.name",
     "settings": [
       {
