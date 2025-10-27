@@ -20,6 +20,14 @@
   .header-icon_ct:hover {
     @apply text-footer!;
   }
+
+  .contact-icon_ct {
+    @apply h-footer-icon-size! w-footer-icon-size! shrink-0!;
+  }
+
+  .social-icon_ct {
+    @apply h-footer-icon-size! w-footer-icon-size!;
+  }
   /* #endregion */
 
   .line-separator_ct {

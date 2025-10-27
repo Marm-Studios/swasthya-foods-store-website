@@ -42,7 +42,7 @@
 
 .footer__content-bottom {
   border-top: solid 0.1rem rgba(var(--color-foreground), 0.08);
-  padding-top: 3rem;
+  /* padding-top: 3rem; */
 }
 
 .footer__content-bottom:only-child {
@@ -57,7 +57,7 @@
 @media screen and (max-width: 749px) {
   .footer__content-bottom {
     flex-wrap: wrap;
-    padding-top: 0;
+    /* padding-top: 0; */
     padding-left: 0;
     padding-right: 0;
     row-gap: 1.5rem;
@@ -150,16 +150,16 @@
 }
 
 .footer-block__heading {
-  margin-bottom: 2rem;
+  /* margin-bottom: 2rem; */
   margin-top: 0;
-  font-size: calc(var(--font-heading-scale) * 1.6rem);
+  /* font-size: calc(var(--font-heading-scale) * 1.6rem); */
 }
 
-@media screen and (min-width: 990px) {
+/* @media screen and (min-width: 990px) {
   .footer-block__heading {
     font-size: calc(var(--font-heading-scale) * 1.8rem);
   }
-}
+} */
 
 .footer__list-social:empty,
 .footer-block--newsletter:empty {
@@ -312,14 +312,14 @@
   }
 }
 
-.footer-block__details-content {
+/* .footer-block__details-content {
   margin-bottom: 4rem;
-}
+} */
 
 @media screen and (min-width: 750px) {
-  .footer-block__details-content {
+  /* .footer-block__details-content {
     margin-bottom: 0;
-  }
+  } */
 
   .footer-block__details-content > p,
   .footer-block__details-content > li {
@@ -330,50 +330,53 @@
     display: inline;
   }
 
-  .footer-block__details-content > li:not(:last-child) {
+  /* .footer-block__details-content > li:not(:last-child) {
     margin-right: 1.5rem;
-  }
+  } */
 }
 
-.footer-block__details-content .list-menu__item--link,
-.copyright__content a {
+/* .footer-block__details-content .list-menu__item--link {
   color: rgba(var(--color-foreground), 0.75);
-}
+} */
 
-.footer-block__details-content .list-menu__item--active {
+/* .copyright__content a {
+  color: rgba(var(--color-foreground), 0.75);
+} */
+
+/* .footer-block__details-content .list-menu__item--active {
   transition: text-decoration-thickness var(--duration-short) ease;
   color: rgb(var(--color-foreground));
-}
+} */
 
 @media screen and (min-width: 750px) {
   .footer-block__details-content .list-menu__item--link:hover,
   .copyright__content a:hover {
-    color: rgb(var(--color-foreground));
+    /* color: rgb(var(--color-foreground)); */
     text-decoration: underline;
-    text-underline-offset: 0.3rem;
+    text-underline-offset: 0.35rem;
   }
 
-  .footer-block__details-content .list-menu__item--active:hover {
+  /* .footer-block__details-content .list-menu__item--active:hover {
     text-decoration-thickness: 0.2rem;
-  }
+  } */
 }
 
 @media screen and (max-width: 989px) {
-  .footer-block__details-content .list-menu__item--link {
+  /* .footer-block__details-content .list-menu__item--link {
     padding-top: 1rem;
     padding-bottom: 1rem;
-  }
+  } */
 }
 
 @media screen and (min-width: 750px) {
-  .footer-block__details-content .list-menu__item--link {
+  /* .footer-block__details-content .list-menu__item--link {
     display: inline-block;
     font-size: 1.4rem;
-  }
+  } */
 
-  .footer-block__details-content > :first-child .list-menu__item--link {
+  /* .footer-block__details-content > :first-child .list-menu__item--link {
     padding-top: 0;
-  }
+  } */
 }
 
 .footer-block-image {
@@ -402,7 +405,7 @@
 }
 
 .footer-block__image-wrapper {
-  margin-bottom: 2rem;
+  /* margin-bottom: 2rem; */
   overflow: hidden !important;
 }
 
@@ -412,7 +415,7 @@
   max-width: 100%;
 }
 
-.footer-block__brand-info {
+/* .footer-block__brand-info {
   text-align: left;
 }
 
@@ -423,7 +426,7 @@
 .footer-block:only-child > .footer-block__brand-info > .footer-block__image-wrapper {
   margin-left: auto;
   margin-right: auto;
-}
+} */
 
 .footer-block-image > img,
 .footer-block__brand-info > img {
@@ -434,22 +437,22 @@
   justify-content: center;
 }
 
-.footer-block__brand-info .footer__list-social.list-social {
+/* .footer-block__brand-info .footer__list-social.list-social {
   justify-content: flex-start;
-}
+} */
 
 .footer-block__details-content .placeholder-svg {
   max-width: 20rem;
 }
 
-.copyright__content {
+/* .copyright__content {
   font-size: 1.1rem;
-}
+} */
 
-.copyright__content a {
+/* .copyright__content a {
   color: currentColor;
   text-decoration: none;
-}
+} */
 
 .policies {
   display: inline;
