@@ -188,6 +188,7 @@
 
   .copyright__content {
     @apply text-xl! text-foreground-pri!;
+    font-family: var(--font-heading-family);
   }
   /* #endregion */
 

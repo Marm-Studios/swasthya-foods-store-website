@@ -326,6 +326,10 @@
         "predictive_search_show_price": {
           "label": "Product price",
           "info": "Shown when search suggestions enabled"
+        },
+        "show_search_ui": {
+          "label": "Show search in header",
+          "info": "Toggle the search input/icon visibility across the theme (header and mobile)."
         }
       }
     },
