@@ -236,4 +236,50 @@
     @apply text-footer!;
   }
   /* #endregion */
+
+  /* #region MAIN-PAGE */
+  main {
+    @apply py-24!;
+  }
+
+  .main-page-title {
+    @apply text-7xl! mb-12!;
+  }
+  /* #endregion */
+
+  /* #region ABOUT-PAGE */
+  .about-page-content_ct {
+    @apply mt-12! mb-10!;
+  }
+
+  .about-dr-photo_ct {
+    @apply h-[300px]! md:h-[375px]! lg:h-[450px]! w-auto!;
+  }
+  /* #endregion */
+
+  /* #region CONTACT-PAGE */
+  .contact-details-wrapper_ct {
+    @apply flex flex-col justify-start items-start gap-12 py-10!;
+  }
+
+  .ind-contact-details-section_ct {
+    @apply flex! flex-col! gap-4!;
+  }
+
+  .ind-contact-details-section_ct a:hover {
+    @apply text-footer!;
+  }
+
+  .contact-details-heading_ct {
+    @apply font-medium! text-4xl!;
+  }
+
+  .contact-details-text_ct {
+    @apply text-2xl!;
+  }
+
+  .contact .title {
+    @apply font-medium! text-5xl!;
+  }
+  /* #endregion */
 }

@@ -35,4 +35,34 @@
     /* border-color: rgba(var(--foreground-pri-color), 0.5) !important; */
     /* color: rgba(var(--foreground-pri-color), 0.75) !important; */
   }
+
+  .semi-imp-text_ct {
+    @apply font-semibold!;
+  }
+
+  /* #region BUTTONS */
+  .btn-reg {
+    @apply p-0! min-h-2! min-w-2! tracking-wider!;
+    font-family: var(--font-body-family) !important;
+  }
+
+  .btn-pri {
+    @apply bg-heading-pri! text-background-pri! py-4! px-12! text-3xl! border-none!;
+  }
+
+  .btn-pri:hover {
+    @apply bg-foreground-pri!;
+  }
+
+  .btn-reg:before,
+  .btn-reg:after {
+    content: '' !important; /* Set content to an empty string to remove any text or symbols */
+    display: none !important; /* Optionally, hide the pseudo-element entirely */
+    /* Reset other properties if necessary, e.g., width, height, background */
+    width: 0 !important;
+    height: 0 !important;
+    background: none !important;
+    border: none !important;
+  }
+  /* #endregion */
 }

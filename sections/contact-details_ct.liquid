@@ -1,0 +1,27 @@
+<div class="page-width">
+  {% comment %} page-width--narrow {% endcomment %}
+  <div class="page-width contact-details-wrapper_ct">
+    <div class="ind-contact-details-section_ct">
+      <h3 class="contact-details-heading_ct">Call us</h3>
+      <a href="tel:{{ settings.contact_phone | escape -}}" class="contact-details-text_ct">
+        {{- settings.contact_phone | escape -}}
+      </a>
+    </div>
+    <div class="ind-contact-details-section_ct">
+      <h3 class="contact-details-heading_ct">Email us</h3>
+      <a href="mailto:{{settings.contact_email}}" class="contact-details-text_ct">{{ settings.contact_email }}</a>
+    </div>
+    <div class="ind-contact-details-section_ct">
+      <h3 class="contact-details-heading_ct">Visit us</h3>
+      <a href="{{ settings.contact_address_link }}" href="" class="contact-details-text_ct">
+        {{- settings.contact_address_text | escape -}}
+      </a>
+    </div>
+    <div class="ind-contact-details-section_ct">
+      <h3 class="contact-details-heading_ct">Follow us</h3>
+      {%- render 'social-icons', class: 'footer__list-social' -%}
+    </div>
+  </div>
+
+  <hr class="line-separator_ct">
+</div>
