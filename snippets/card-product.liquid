@@ -43,7 +43,7 @@
   <div class="card-wrapper product-card-wrapper underline-links-hover">
     <div
       class="
-        card card--{{ settings.card_style }}
+        product_card_outer_ct card card--{{ settings.card_style }}
         {% if card_product.featured_media %} card--media{% else %} card--text{% endif %}
         {% if settings.card_style == 'card' %} color-{{ settings.card_color_scheme }} gradient{% endif %}
         {% if image_shape and image_shape != 'default' %} card--shape{% endif %}
@@ -126,16 +126,17 @@
           </div>
           <div class="card__badge {{ settings.badge_position }}">
             {%- if card_product.available == false -%}
+              {% comment %} class="badge badge--bottom-left color-{{ settings.sold_out_badge_color_scheme }}" {% endcomment %}
               <span
                 id="NoMediaStandardBadge-{{ section_id }}-{{ card_product.id }}"
-                class="badge badge--bottom-left color-{{ settings.sold_out_badge_color_scheme }}"
+                class="product-card-badge_ct"
               >
                 {{- 'products.product.sold_out' | t -}}
               </span>
             {%- elsif card_product.compare_at_price > card_product.price and card_product.available -%}
               <span
                 id="NoMediaStandardBadge-{{ section_id }}-{{ card_product.id }}"
-                class="badge badge--bottom-left color-{{ settings.sale_badge_color_scheme }}"
+                class="product-card-badge_ct"
               >
                 {{- 'products.product.on_sale' | t -}}
               </span>
@@ -143,7 +144,7 @@
           </div>
         </div>
       </div>
-      <div class="card__content">
+      <div class="card-btm_ct card__content">
         <div class="card__information">
           <h3
             class="card__heading{% if card_product.featured_media or settings.card_style == 'standard' %} h5{% endif %}"
@@ -552,14 +553,14 @@
           {%- if card_product.available == false -%}
             <span
               id="Badge-{{ section_id }}-{{ card_product.id }}"
-              class="badge badge--bottom-left color-{{ settings.sold_out_badge_color_scheme }}"
+              class="product-card-badge_ct"
             >
               {{- 'products.product.sold_out' | t -}}
             </span>
           {%- elsif card_product.compare_at_price > card_product.price and card_product.available -%}
             <span
               id="Badge-{{ section_id }}-{{ card_product.id }}"
-              class="badge badge--bottom-left color-{{ settings.sale_badge_color_scheme }}"
+              class="product-card-badge_ct"
             >
               {{- 'products.product.on_sale' | t -}}
             </span>
@@ -579,7 +580,7 @@
   <div class="card-wrapper product-card-wrapper underline-links-hover">
     <div
       class="
-        card card--{{ settings.card_style }}
+        product_card_outer_ct card card--{{ settings.card_style }}
         {% if extend_height %} card--extend-height{% endif %}
         {% if image_shape and image_shape != 'default' %} card--shape{% endif %}
         {% if settings.card_style == 'card' %} color-{{ settings.card_color_scheme }} gradient{% endif %}
@@ -603,7 +604,7 @@
           </div>
         </div>
       </div>
-      <div class="card__content">
+      <div class="card-btm_ct card__content">
         <div class="card__information">
           <h3 class="card__heading card__heading--placeholder{% if settings.card_style == 'standard' %} h5{% endif %}">
             <a role="link" aria-disabled="true" class="full-unstyled-link">

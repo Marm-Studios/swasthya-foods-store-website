@@ -6,7 +6,7 @@
 }
 
 .card--card .quick-add {
-  margin: 0 1.3rem 1rem;
+  margin: 1.25rem 1.25rem 1rem;
 }
 
 .quick-add-modal {
@@ -356,7 +356,7 @@ quick-add-modal .product-form__buttons {
 }
 
 .quick-add__submit {
-  padding: 0.8rem;
+  /* padding: 0.8rem; */
   min-width: 100%;
   box-sizing: border-box;
 }
