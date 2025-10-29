@@ -385,4 +385,10 @@
     @apply bg-foreground-pri! text-background-pri!;
   }
   /* #endregion */
+
+  /* #region CART */
+  .cart-count-bubble {
+    @apply bg-announcement-bar! text-background-pri! text-base! h-7! w-7! left-8! bottom-5!;
+  }
+  /* #endregion */
 }
