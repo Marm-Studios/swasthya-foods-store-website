@@ -243,7 +243,7 @@
   }
 
   .main-page-title {
-    @apply text-7xl! mb-12!;
+    @apply text-heading-pri! font-medium! text-7xl! mb-12!;
   }
   /* #endregion */
 
@@ -285,7 +285,7 @@
 
   /* #region PRODUCT-COLLECTION-PAGE */
   .collection-hero__title {
-    @apply mb-12! text-7xl!;
+    @apply text-heading-pri! font-medium! mb-12! text-7xl!;
   }
 
   .product-grid_ct {
@@ -324,6 +324,7 @@
     @apply bg-foreground-pri!;
   }
 
+  .product-price-badge_ct,
   .product-card-badge_ct {
     @apply bg-heading-pri! text-background-pri! text-2xl! font-medium! px-4! py-2!;
   }
@@ -345,6 +346,43 @@
   .price__regular .price-item--regular,
   .price__sale .price-item--sale {
     @apply text-[1.75rem]! font-medium!;
+  }
+  /* #endregion */
+
+  /* #region IND-PRODUCT-PAGE */
+  .product .line-separator_ct {
+    @apply mb-14!;
+  }
+
+  .quantity__label {
+    @apply text-2xl!;
+  }
+
+  .quantity {
+    @apply gap-4! px-4!;
+  }
+
+  .quantity__button {
+    @apply w-auto!;
+  }
+
+  .quantity__input,
+  input[type='number'].quantity__input {
+    outline: none !important;
+    box-shadow: none !important;
+  }
+
+  .product-form__submit {
+    @apply bg-footer! mb-6! py-3! text-foreground-pri!;
+  }
+
+  .product-form__submit:hover,
+  .shopify-payment-button__button:hover {
+    @apply bg-heading-pri!;
+  }
+
+  .shopify-payment-button__button {
+    @apply bg-foreground-pri! text-background-pri!;
   }
   /* #endregion */
 }

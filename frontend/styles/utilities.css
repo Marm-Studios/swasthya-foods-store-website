@@ -28,6 +28,14 @@
   .social-icon_ct {
     @apply h-footer-icon-size! w-footer-icon-size!;
   }
+
+  .menu-icon_ct {
+    @apply h-menu-icon-size! w-menu-icon-size!;
+  }
+
+  .menu-icon_ct:hover {
+    @apply text-footer!;
+  }
   /* #endregion */
 
   .line-separator_ct {
