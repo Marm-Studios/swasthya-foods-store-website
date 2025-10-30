@@ -65,6 +65,15 @@
             "page": ""
           }
         },
+        "collapsible-row-2": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "How to use",
+            "icon": "question_mark",
+            "content": "<p>Kneed dough in hot water, cover it with cloth for 5 minutes and then it's ready to make the healthiest rotis.</p>",
+            "page": ""
+          }
+        },
         "collapsible-row-3": {
           "type": "collapsible_tab",
           "settings": {
@@ -79,15 +88,6 @@
           "settings": {
             "heading": "Shipping & Returns",
             "icon": "truck",
-            "content": "",
-            "page": ""
-          }
-        },
-        "collapsible-row-2": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Dimensions",
-            "icon": "ruler",
             "content": "",
             "page": ""
           }
@@ -109,9 +109,9 @@
         "buy_buttons",
         "description",
         "collapsible-row-0",
+        "collapsible-row-2",
         "collapsible-row-3",
         "collapsible-row-1",
-        "collapsible-row-2",
         "share"
       ],
       "settings": {
