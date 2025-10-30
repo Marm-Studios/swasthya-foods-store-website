@@ -12,6 +12,10 @@
     @apply h-header-icon-size! w-header-icon-size!;
   }
 
+  .header-icon-large_ct {
+    @apply h-header-icon-large-size! w-header-icon-large-size!;
+  }
+
   #cart-icon-bubble .svg-wrapper {
     @apply h-header-icon-size! w-header-icon-size!;
   }
@@ -35,6 +39,10 @@
 
   .menu-icon_ct {
     @apply h-menu-icon-size! w-menu-icon-size!;
+  }
+
+  .menu-icon-small_ct {
+    @apply h-menu-icon-small-size! w-menu-icon-small-size!;
   }
 
   .menu-icon_ct:hover {
@@ -62,7 +70,12 @@
     @apply bg-heading-pri! text-background-pri! py-4! px-12! text-3xl! border-none!;
   }
 
-  .btn-pri:hover {
+  .btn-sec {
+    @apply bg-announcement-bar! text-background-pri! py-4! px-12! text-3xl! border-none!;
+  }
+
+  .btn-pri:hover,
+  .btn-sec:hover {
     @apply bg-foreground-pri!;
   }
 

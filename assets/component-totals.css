@@ -5,7 +5,7 @@
 }
 
 .totals > * {
-  font-size: 1.6rem;
+  /* font-size: 1.6rem; */
   margin: 0;
 }
 
@@ -21,13 +21,13 @@
   margin-left: 2rem;
 }
 
-.totals__total {
+/* .totals__total {
   margin-top: .5rem;
-}
+} */
 
-.totals__total-value {
+/* .totals__total-value {
   font-size: 1.8rem;
-}
+} */
 
 .cart__ctas + .totals {
   margin-top: 2rem;

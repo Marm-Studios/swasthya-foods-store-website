@@ -13,9 +13,10 @@
   --heading-sec-color: #37a850;
   --heading-pro-hovercolor: #20201f;
 
+  --menu-icon-small-size: 1.75rem;
   --menu-icon-size: 2.5rem;
   --header-icon-size: 2.75rem;
-  --header-large-icon-size: 2.75rem;
+  --header-icon-large-size: 3rem;
   --footer-icon-size: 2.5rem;
 }
 
@@ -31,9 +32,10 @@
   --color-heading-sec: var(--heading-sec-color);
   --color-heading-pri-hover: var(--heading-pro-hovercolor);
 
+  --spacing-menu-icon-small-size: var(--menu-icon-small-size);
   --spacing-menu-icon-size: var(--menu-icon-size);
   --spacing-header-icon-size: var(--header-icon-size);
-  --spacing-header-large-icon-size: var(--header-large-icon-size);
+  --spacing-header-icon-large-size: var(--header-icon-large-size);
   --spacing-footer-icon-size: var(--footer-icon-size);
 }
 
