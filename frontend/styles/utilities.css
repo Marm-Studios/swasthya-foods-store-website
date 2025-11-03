@@ -62,8 +62,9 @@
 
   /* #region BUTTONS */
   .btn-reg {
-    @apply p-0! min-h-2! min-w-2! tracking-wider!;
+    @apply p-0! min-h-2! min-w-2!;
     font-family: var(--font-body-family) !important;
+    /* tracking-wider! */
   }
 
   .btn-pri {
