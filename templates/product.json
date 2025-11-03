@@ -79,7 +79,7 @@
           "settings": {
             "heading": "Recipes",
             "icon": "serving_dish",
-            "content": "",
+            "content": "{{ product.metafields.custom.recipes | metafield_tag }}",
             "page": ""
           }
         },
