@@ -708,7 +708,9 @@
             class="product-popup-modal__toggle"
             aria-label="{{ 'accessibility.close' | t }}"
           >
-            {{- 'icon-close.svg' | inline_asset_content -}}
+            <span class="svg-wrapper menu-icon-small_ct">
+              {{- 'icon-close.svg' | inline_asset_content -}}
+            </span>
           </button>
           <div class="product-popup-modal__content-info">
             <h1 class="h2">{{ block.settings.page.title | escape }}</h1>

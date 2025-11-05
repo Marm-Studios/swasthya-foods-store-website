@@ -63,15 +63,15 @@
     >
       {% case media.media_type %}
         {% when 'video', 'external_video' %}
-          <span class="svg-wrapper">
+          <span class="svg-wrapper menu-icon-small_ct">
             {{- 'icon-play.svg' | inline_asset_content -}}
           </span>
         {% when 'model' %}
-          <span class="svg-wrapper">
+          <span class="svg-wrapper menu-icon-small_ct">
             {{- 'icon-3d-model.svg' | inline_asset_content -}}
           </span>
         {% else %}
-          <span class="svg-wrapper">
+          <span class="svg-wrapper menu-icon-small_ct">
             {{- 'icon-zoom.svg' | inline_asset_content -}}
           </span>
       {% endcase %}

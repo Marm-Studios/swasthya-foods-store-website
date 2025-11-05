@@ -1,0 +1,98 @@
+<div class="page-width">
+  <h2>The Swasthya Difference</h2>
+  <div>
+    {% if section.settings.product_benefits_image != blank %}
+      {%- assign img = section.settings.product_benefits_image -%}
+      <img
+        src="{{ img | image_url: width: 800 }}"
+        srcset="{{ img | image_url: width: 400 }} 400w, {{ img | image_url: width: 800 }} 800w, {{ img | image_url: width: 1200 }} 1200w"
+        sizes="(max-width: 640px) 100vw, 50vw"
+        alt="{{ section.settings.product_image_alt_text | escape }}"
+        loading="{% if section.settings.lazyload %}lazy{% else %}eager{% endif %}"
+        class="w-full h-auto object-cover rounded"
+        height="auto"
+        width="auto"
+      >
+    {% endif %}
+  </div>
+  <div class="usp-section-container_ct">
+    <div class="usp-content-block_ct">
+      <div class="usp-icon-wrapper_ct">
+        <span class="svg-wrapper usp-icon_ct">{{ 'icon-diabetes.svg' | inline_asset_content }}</span>
+      </div>
+      <p>Ideal for diabetes</p>
+    </div>
+    <div class="usp-content-block_ct">
+      <div class="usp-icon-wrapper_ct">
+        <span class="svg-wrapper usp-icon_ct">{{ 'icon-lowgi.svg' | inline_asset_content }}</span>
+      </div>
+      <p>Low Glycemic Index</p>
+    </div>
+    <div class="usp-content-block_ct">
+      <div class="usp-icon-wrapper_ct">
+        <span class="svg-wrapper usp-icon_ct">{{ 'icon-weight.svg' | inline_asset_content }}</span>
+      </div>
+      <p>Helps Manage Weight</p>
+    </div>
+    <div class="usp-content-block_ct">
+      <div class="usp-icon-wrapper_ct">
+        <span class="svg-wrapper usp-icon_ct">{{ 'icon-fiber.svg' | inline_asset_content }}</span>
+      </div>
+      <p>High In Fiber</p>
+    </div>
+  </div>
+  {% comment %} <hr class="line-separator_ct"> {% endcomment %}
+</div>
+
+{% schema %}
+{
+  "name": "Product benefits (custom)",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Why customers love this product"
+    },
+    {
+      "type": "richtext",
+      "id": "content",
+      "label": "Content",
+      "default": "<ul><li>Benefit 1</li><li>Benefit 2</li></ul>"
+    },
+    {
+      "type": "image_picker",
+      "id": "product_benefits_image",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "product_image_alt_text",
+      "label": "Image alt text",
+      "default": "Image showcasing difference between Swasthya Foods products and others"
+    },
+    {
+      "type": "checkbox",
+      "id": "lazyload",
+      "label": "Lazy-load image",
+      "default": true
+    },
+    {
+      "type": "select",
+      "id": "image_position",
+      "label": "Image position (desktop)",
+      "options": [
+        { "value": "right", "label": "Right" },
+        { "value": "left", "label": "Left" }
+      ],
+      "default": "right"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Product benefits (custom)",
+      "category": "Home"
+    }
+  ]
+}
+{% endschema %}

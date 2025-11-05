@@ -242,8 +242,40 @@
   /* #endregion */
 
   /* #region HOME-PAGE */
-  .banner {
-    /* @apply mx-20!; */
+  .hero-banner_ct {
+    @apply flex! flex-col! gap-10!;
+  }
+
+  .banner__content {
+    @apply flex! flex-col! justify-center! items-center! text-center! gap-7!;
+  }
+
+  .banner__heading {
+    @apply text-7xl! font-medium! text-foreground-pri!;
+  }
+
+  .banner__subtitle {
+    @apply text-[2rem]! font-medium! text-announcement-bar! leading-10!;
+  }
+
+  .banner__media img {
+    @apply w-9/10! md:w-3/4! mx-auto!;
+  }
+
+  .usp-section-container_ct {
+    @apply flex! flex-row! justify-center! items-start! gap-8! py-10!;
+  }
+
+  .usp-icon-wrapper_ct {
+    @apply bg-footer! rounded-full! p-2! aspect-square! h-28! w-28! flex! justify-center! items-center! text-background-pri!;
+  }
+
+  .usp-content-block_ct {
+    @apply flex! flex-col! justify-center! items-center! gap-4! text-center!;
+  }
+
+  .usp-content-block_ct p {
+    @apply text-2xl! text-foreground-pri! font-medium!;
   }
   /* #endregion */
 
@@ -397,6 +429,28 @@
 
   .shopify-payment-button__button {
     @apply bg-foreground-pri! text-background-pri!;
+  }
+
+  .accordion__title {
+    @apply text-3xl!;
+  }
+
+  .accordion .summary__title {
+    @apply items-center!;
+  }
+
+  .accordion__content {
+    @apply text-2xl!;
+  }
+
+  .accordion__content h6 {
+    margin-block-start: 0 !important;
+    margin-block-end: 0 !important;
+    @apply mt-4! mb-2!;
+  }
+
+  .product__media-wrapper {
+    @apply mb-10! md:mb-0!;
   }
   /* #endregion */
 

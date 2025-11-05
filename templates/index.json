@@ -38,11 +38,7 @@
           }
         }
       },
-      "block_order": [
-        "heading",
-        "text",
-        "button"
-      ],
+      "block_order": ["heading", "text", "button"],
       "settings": {
         "image": "shopify://shop_images/landing_page_banner.jpg",
         "image_overlay_opacity": 40,
@@ -57,42 +53,46 @@
         "show_text_below": false
       }
     },
-    "rich_text": {
-      "type": "rich-text",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "Talk about your brand",
-            "heading_size": "h1"
-          }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "heading",
-        "text"
-      ],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "scheme-1",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 0
-      }
+    "usp_section": {
+      "type": "usp-section_ct",
+      "settings": {}
     },
+    // "rich_text": {
+    //   "type": "rich-text",
+    //   "blocks": {
+    //     "heading": {
+    //       "type": "heading",
+    //       "settings": {
+    //         "heading": "Talk about your brand",
+    //         "heading_size": "h1"
+    //       }
+    //     },
+    //     "text": {
+    //       "type": "text",
+    //       "settings": {
+    //         "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
+    //       }
+    //     }
+    //   },
+    //   "block_order": [
+    //     "heading",
+    //     "text"
+    //   ],
+    //   "settings": {
+    //     "desktop_content_position": "center",
+    //     "content_alignment": "center",
+    //     "color_scheme": "scheme-1",
+    //     "full_width": true,
+    //     "padding_top": 40,
+    //     "padding_bottom": 0
+    //   }
+    // },
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
         "collection": "all",
         "products_to_show": 8,
-        "title": "Featured products",
+        "title": "Our Wholesome Products",
         "heading_size": "h2",
         "description": "",
         "show_description": false,
@@ -111,118 +111,114 @@
         "quick_add": "standard",
         "columns_mobile": "2",
         "swipe_on_mobile": false,
-        "padding_top": 28,
-        "padding_bottom": 36
-      }
-    },
-    "collage": {
-      "type": "collage",
-      "blocks": {
-        "collection-0": {
-          "type": "collection",
-          "settings": {
-            "collection": ""
-          }
-        },
-        "product": {
-          "type": "product",
-          "settings": {
-            "product": "",
-            "second_image": false
-          }
-        },
-        "collection-1": {
-          "type": "collection",
-          "settings": {
-            "collection": ""
-          }
-        }
-      },
-      "block_order": [
-        "collection-0",
-        "product",
-        "collection-1"
-      ],
-      "settings": {
-        "heading": "Multimedia collage",
-        "heading_size": "h2",
-        "desktop_layout": "left",
-        "mobile_layout": "collage",
-        "card_styles": "product-card-wrapper",
-        "color_scheme": "scheme-1",
         "padding_top": 36,
         "padding_bottom": 36
       }
     },
-    "video": {
-      "type": "video",
-      "settings": {
-        "heading": "",
-        "heading_size": "h1",
-        "enable_video_looping": false,
-        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-        "description": "",
-        "full_width": false,
-        "color_scheme": "scheme-1",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "multicolumn": {
-      "type": "multicolumn",
-      "blocks": {
-        "column1": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column2": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column3": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "column1",
-        "column2",
-        "column3"
-      ],
-      "settings": {
-        "title": "",
-        "heading_size": "h1",
-        "image_width": "third",
-        "image_ratio": "adapt",
-        "button_label": "",
-        "button_link": "",
-        "columns_desktop": 3,
-        "column_alignment": "center",
-        "background_style": "none",
-        "color_scheme": "scheme-1",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "slideshow_FjkN93": {
-      "type": "slideshow",
+    // "collage": {
+    //   "type": "collage",
+    //   "blocks": {
+    //     "collection-0": {
+    //       "type": "collection",
+    //       "settings": {
+    //         "collection": ""
+    //       }
+    //     },
+    //     "product": {
+    //       "type": "product",
+    //       "settings": {
+    //         "product": "",
+    //         "second_image": false
+    //       }
+    //     },
+    //     "collection-1": {
+    //       "type": "collection",
+    //       "settings": {
+    //         "collection": ""
+    //       }
+    //     }
+    //   },
+    //   "block_order": [
+    //     "collection-0",
+    //     "product",
+    //     "collection-1"
+    //   ],
+    //   "settings": {
+    //     "heading": "Multimedia collage",
+    //     "heading_size": "h2",
+    //     "desktop_layout": "left",
+    //     "mobile_layout": "collage",
+    //     "card_styles": "product-card-wrapper",
+    //     "color_scheme": "scheme-1",
+    //     "padding_top": 36,
+    //     "padding_bottom": 36
+    //   }
+    // },
+    // "video": {
+    //   "type": "video",
+    //   "settings": {
+    //     "heading": "",
+    //     "heading_size": "h1",
+    //     "enable_video_looping": false,
+    //     "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+    //     "description": "",
+    //     "full_width": false,
+    //     "color_scheme": "scheme-1",
+    //     "padding_top": 36,
+    //     "padding_bottom": 36
+    //   }
+    // },
+    // "multicolumn": {
+    //   "type": "multicolumn",
+    //   "blocks": {
+    //     "column1": {
+    //       "type": "column",
+    //       "settings": {
+    //         "title": "Column",
+    //         "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+    //         "link_label": "",
+    //         "link": ""
+    //       }
+    //     },
+    //     "column2": {
+    //       "type": "column",
+    //       "settings": {
+    //         "title": "Column",
+    //         "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+    //         "link_label": "",
+    //         "link": ""
+    //       }
+    //     },
+    //     "column3": {
+    //       "type": "column",
+    //       "settings": {
+    //         "title": "Column",
+    //         "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+    //         "link_label": "",
+    //         "link": ""
+    //       }
+    //     }
+    //   },
+    //   "block_order": ["column1", "column2", "column3"],
+    //   "settings": {
+    //     "title": "",
+    //     "heading_size": "h1",
+    //     "image_width": "third",
+    //     "image_ratio": "adapt",
+    //     "button_label": "",
+    //     "button_link": "",
+    //     "columns_desktop": 3,
+    //     "column_alignment": "center",
+    //     "background_style": "none",
+    //     "color_scheme": "scheme-1",
+    //     "columns_mobile": "1",
+    //     "swipe_on_mobile": false,
+    //     "padding_top": 36,
+    //     "padding_bottom": 36
+    //   }
+    // },
+    "product_reviews": {
+      "type": "main-reviews-slideshow_ct",
       "blocks": {
         "slide_W9AFMY": {
           "type": "slide",
@@ -259,30 +255,35 @@
           }
         }
       },
-      "block_order": [
-        "slide_W9AFMY",
-        "slide_gbLk36"
-      ],
+      "block_order": ["slide_W9AFMY", "slide_gbLk36"],
       "name": "t:sections.slideshow.presets.name",
       "settings": {
         "layout": "grid",
         "slide_height": "small",
         "slider_visual": "dots",
-        "auto_rotate": false,
-        "change_slides_speed": 5,
+        "auto_rotate": true,
+        "change_slides_speed": 3,
         "image_behavior": "none",
         "show_text_below": false,
         "accessibility_info": "Reviews about our products"
+      }
+    },
+    "product_benefits": {
+      "type": "product-benefits_ct",
+      "settings": {
+        "image": ""
       }
     }
   },
   "order": [
     "image_banner",
-    "rich_text",
+    "usp_section",
+    // "rich_text",
     "featured_collection",
-    "collage",
-    "video",
-    "multicolumn",
-    "slideshow_FjkN93"
+    // "collage",
+    // "video",
+    // "multicolumn",
+    "product_reviews",
+    "product_benefits"
   ]
 }

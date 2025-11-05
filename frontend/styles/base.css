@@ -18,6 +18,7 @@
   --header-icon-size: 2.75rem;
   --header-icon-large-size: 3rem;
   --footer-icon-size: 2.5rem;
+  --usp-icon-size: 5rem;
 }
 
 @theme inline {
@@ -37,6 +38,7 @@
   --spacing-header-icon-size: var(--header-icon-size);
   --spacing-header-icon-large-size: var(--header-icon-large-size);
   --spacing-footer-icon-size: var(--footer-icon-size);
+  --spacing-usp-icon-size: var(--usp-icon-size);
 }
 
 @layer base {

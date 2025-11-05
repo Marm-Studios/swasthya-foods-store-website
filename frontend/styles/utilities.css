@@ -45,8 +45,13 @@
     @apply h-menu-icon-small-size! w-menu-icon-small-size!;
   }
 
-  .menu-icon_ct:hover {
+  .menu-icon_ct:hover,
+  .menu-icon-small_ct:hover {
     @apply text-footer!;
+  }
+
+  .usp-icon_ct {
+    @apply h-usp-icon-size! w-usp-icon-size!;
   }
   /* #endregion */
 
