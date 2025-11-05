@@ -1,5 +1,9 @@
 @layer utilities {
   /* #region HEADER-ICONS */
+  .icon {
+    @apply w-full! h-full!;
+  }
+
   .header__icons {
     @apply flex! flex-row! justify-self-end! justify-center! items-center! gap-2! sm:gap-3! md:gap-5!;
   }
@@ -50,7 +54,8 @@
     @apply text-footer!;
   }
 
-  .usp-icon_ct {
+  .usp-icon_ct,
+  .product-benefits-icon_ct {
     @apply h-usp-icon-size! w-usp-icon-size!;
   }
   /* #endregion */

@@ -251,7 +251,7 @@
   }
 
   .banner__heading {
-    @apply text-7xl! font-medium! text-foreground-pri!;
+    @apply text-[4rem]! font-medium! text-foreground-pri!;
   }
 
   .banner__subtitle {
@@ -277,6 +277,46 @@
   .usp-content-block_ct p {
     @apply text-2xl! text-foreground-pri! font-medium!;
   }
+
+  .product-benefits-container_ct {
+    @apply flex! flex-col! md:flex-row! justify-around! items-center! gap-10!;
+  }
+
+  /* .product-benefits-container_ct div {
+    @apply basis-1!;
+  } */
+
+  /* .product-benefits-container_ct img {
+    @apply w-3/4!;
+  } */
+
+  .product-benefits-container_ct > div:first-child {
+    @apply basis-1/2! md:basis-3/4! lg:basis-3/5!;
+  }
+
+  .product-benefits-container_ct img {
+    @apply w-3/4! md:w-auto! mx-auto!;
+  }
+
+  .product-benefits-container_ct > div:last-child {
+    @apply basis-1/4!;
+  }
+
+  .product-benefits-icon-container_ct {
+    @apply flex! flex-row! md:flex-col! gap-6!;
+  }
+
+  .product-benefits-content-block_ct {
+    @apply flex! flex-col! md:flex-row! justify-center! md:justify-start! items-center! text-center! md:text-left! gap-6!;
+  }
+
+  .product-benefits-icon-wrapper_ct {
+    @apply bg-heading-pri! rounded-full! p-2! aspect-square! h-28! w-28! flex! justify-center! items-center! text-background-pri!;
+  }
+
+  .slideshow__controls .icon {
+    @apply text-foreground-pri!;
+  }
   /* #endregion */
 
   /* #region MAIN-PAGE */
@@ -285,7 +325,7 @@
   }
 
   .main-page-title {
-    @apply text-heading-pri! font-medium! text-7xl! mb-12!;
+    @apply text-heading-pri! font-medium! text-[4rem]! mb-12!;
   }
   /* #endregion */
 
