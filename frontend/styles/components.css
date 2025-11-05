@@ -502,13 +502,16 @@
     @apply bg-footer! mb-6! py-3! text-foreground-pri!;
   }
 
-  .product-form__submit:hover,
-  .shopify-payment-button__button:hover {
-    @apply bg-heading-pri!;
+  .product-form__submit:hover {
+    @apply bg-foreground-pri! text-background-pri!;
   }
 
   .shopify-payment-button__button {
-    @apply bg-foreground-pri! text-background-pri!;
+    @apply bg-heading-pri! text-background-pri!;
+  }
+
+  .shopify-payment-button__button:hover {
+    @apply bg-foreground-pri!;
   }
 
   .accordion__title {
@@ -534,7 +537,7 @@
   }
 
   .product-size_ct {
-    @apply text-3xl! mb-4!;
+    @apply text-3xl! mb-4! text-foreground-pri!;
   }
 
   .product-desc_ct {
