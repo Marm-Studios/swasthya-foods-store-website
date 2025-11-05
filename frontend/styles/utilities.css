@@ -1,8 +1,8 @@
 @layer utilities {
   /* #region HEADER-ICONS */
-  .icon {
+  /* .icon {
     @apply w-full! h-full!;
-  }
+  } */
 
   .header__icons {
     @apply flex! flex-row! justify-self-end! justify-center! items-center! gap-2! sm:gap-3! md:gap-5!;

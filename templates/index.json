@@ -59,6 +59,7 @@
     },
     "usp_section": {
       "type": "usp-section_ct",
+      "name": "USP Section",
       "settings": {}
     },
     "featured_collection": {
@@ -86,7 +87,7 @@
         "columns_mobile": "2",
         "swipe_on_mobile": false,
         "padding_top": 36,
-        "padding_bottom": 36
+        "padding_bottom": 48
       }
     },
     "product_reviews": {

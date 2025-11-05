@@ -243,7 +243,7 @@
 
   /* #region HOME-PAGE */
   .hero-banner_ct {
-    @apply flex! flex-col! gap-10!;
+    @apply flex! flex-col! gap-10! pb-10!;
   }
 
   .banner__content {
@@ -314,8 +314,40 @@
     @apply bg-heading-pri! rounded-full! p-2! aspect-square! h-28! w-28! flex! justify-center! items-center! text-background-pri!;
   }
 
-  .slideshow__controls .icon {
+  .reviews-section_ct {
+    @apply bg-header! pb-20!;
+  }
+
+  .reviews-section_ct .title {
+    @apply text-heading-pri!;
+  }
+
+  .reviews-section_ct .slideshow__controls .icon {
     @apply text-foreground-pri!;
+  }
+
+  .reviews-section_ct .slideshow__controls {
+    @apply border-none!;
+  }
+
+  .review-content-container_ct {
+    @apply flex! flex-col! justify-start! items-start! gap-4!;
+  }
+
+  .review-person-content_ct {
+    @apply flex! flex-row! justify-start! items-center! gap-6!;
+  }
+
+  .review-person-content_ct img {
+    @apply w-28! h-28!;
+  }
+
+  .review-person-content_ct h4 {
+    @apply text-[2rem]! font-medium!;
+  }
+
+  .review-content-container_ct p {
+    @apply text-2xl!;
   }
   /* #endregion */
 
