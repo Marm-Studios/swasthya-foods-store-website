@@ -532,6 +532,14 @@
   .product__media-wrapper {
     @apply mb-10! md:mb-0!;
   }
+
+  .product-size_ct {
+    @apply text-3xl! mb-4!;
+  }
+
+  .product-desc_ct {
+    @apply text-2xl!;
+  }
   /* #endregion */
 
   /* #region CART */
