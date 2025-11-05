@@ -146,7 +146,7 @@
     "product_benefits": {
       "type": "product-benefits_ct",
       "settings": {
-        "heading": "Why customers love this product",
+        "heading": "The Swasthya Difference",
         "content": "<ul><li>Benefit 1</li><li>Benefit 2</li></ul>",
         "product_benefits_image": "shopify://shop_images/multigrain_comparison.jpg",
         "product_image_alt_text": "Image showcasing difference between Swasthya Foods products and others",
