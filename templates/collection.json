@@ -40,7 +40,9 @@
     "usp_section": {
       "type": "usp-section_ct",
       "name": "USP Section",
-      "settings": {}
+      "settings": {
+        "usp_icon_colour": "brown"
+      }
     },
     "product_benefits": {
       "type": "product-benefits_ct",
@@ -52,5 +54,10 @@
       }
     }
   },
-  "order": ["banner", "product-grid", "usp_section", "product_benefits"]
+  "order": [
+    "banner",
+    "product-grid",
+    "usp_section",
+    "product_benefits"
+  ]
 }
