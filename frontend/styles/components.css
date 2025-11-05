@@ -267,7 +267,15 @@
   }
 
   .usp-icon-wrapper_ct {
-    @apply bg-footer! rounded-full! p-2! aspect-square! h-28! w-28! flex! justify-center! items-center! text-background-pri!;
+    @apply rounded-full! p-2! aspect-square! h-28! w-28! flex! justify-center! items-center! text-background-pri!;
+  }
+
+  .usp-icon-wrapper_ct--orange {
+    @apply bg-footer!;
+  }
+
+  .usp-icon-wrapper_ct--brown {
+    @apply bg-announcement-bar!;
   }
 
   .usp-content-block_ct {
@@ -319,7 +327,7 @@
   }
 
   .reviews-section_ct .title {
-    @apply text-heading-pri!;
+    @apply text-heading-pri! font-medium!;
   }
 
   .reviews-section_ct .slideshow__controls .icon {

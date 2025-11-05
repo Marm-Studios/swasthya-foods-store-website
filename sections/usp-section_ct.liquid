@@ -1,24 +1,53 @@
+{%- assign usp_icon_colour = section.settings.usp_icon_colour | default: 'orange' -%}
+
 <div class="page-width">
   <hr class="line-separator_ct">
   <div class="usp-section-container_ct">
     <div class="usp-content-block_ct">
-      <div class="usp-icon-wrapper_ct">
-        <span class="svg-wrapper usp-icon_ct">{{ 'icon-doctor.svg' | inline_asset_content }}</span>
+      <div class="usp-icon-wrapper_ct usp-icon-wrapper_ct--{{ usp_icon_colour }}">
+        <span class="svg-wrapper usp-icon_ct">
+          {{- 'icon-doctor.svg' | inline_asset_content -}}
+        </span>
       </div>
       <p>Backed by India's Top Doctors</p>
     </div>
     <div class="usp-content-block_ct">
-      <div class="usp-icon-wrapper_ct">
-        <span class="svg-wrapper usp-icon_ct">{{ 'icon-lab.svg' | inline_asset_content }}</span>
+      <div class="usp-icon-wrapper_ct usp-icon-wrapper_ct--{{ usp_icon_colour }}">
+        <span class="svg-wrapper usp-icon_ct">
+          {{- 'icon-lab.svg' | inline_asset_content -}}
+        </span>
       </div>
       <p>Lab Tested</p>
     </div>
     <div class="usp-content-block_ct">
-      <div class="usp-icon-wrapper_ct">
-        <span class="svg-wrapper usp-icon_ct">{{ 'icon-family.svg' | inline_asset_content }}</span>
+      <div class="usp-icon-wrapper_ct usp-icon-wrapper_ct--{{ usp_icon_colour }}">
+        <span class="svg-wrapper usp-icon_ct">
+          {{- 'icon-family.svg' | inline_asset_content -}}
+        </span>
       </div>
       <p>Healthy & Tasty for your family</p>
     </div>
   </div>
   <hr class="line-separator_ct">
 </div>
+
+{% schema %}
+{
+  "name": "USP Section (custom)",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "select",
+      "id": "usp_icon_colour",
+      "label": "USP icon colour",
+      "default": "orange",
+      "options": [
+        { "value": "orange", "label": "Orange" },
+        { "value": "brown", "label": "Brown" }
+      ],
+      "info": "Choose colour style applied to all USP icons"
+    }
+  ]
+}
+{% endschema %}
