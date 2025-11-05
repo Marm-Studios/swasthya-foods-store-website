@@ -95,6 +95,7 @@
         "review_wEVzew": {
           "type": "review",
           "settings": {
+            "photo": "shopify://shop_images/review_person_1.png",
             "photo_alt": "Photo of the person who reviewed",
             "name": "Meera Desai",
             "role": "Founder & Mentor at V.Vidhya Computer Education",
@@ -105,6 +106,7 @@
         "review_pHrWdF": {
           "type": "review",
           "settings": {
+            "photo": "shopify://shop_images/review_person_2.webp",
             "photo_alt": "Photo of the person who reviewed",
             "name": "Neha Sharma",
             "role": "Yoga Instructor",
@@ -115,6 +117,7 @@
         "review_KWVLVa": {
           "type": "review",
           "settings": {
+            "photo": "shopify://shop_images/review_person_3.png",
             "photo_alt": "Photo of the person who reviewed",
             "name": "Arjun Patel",
             "role": "Fitness Coach",
@@ -125,6 +128,7 @@
         "review_6d6GwH": {
           "type": "review",
           "settings": {
+            "photo": "shopify://shop_images/review_person_4.png",
             "photo_alt": "Photo of the person who reviewed",
             "name": "Riya Deshpande",
             "role": "Marketing Professional & Mother",
@@ -135,6 +139,7 @@
         "review_Jdrgdh": {
           "type": "review",
           "settings": {
+            "photo": "shopify://shop_images/review_person_5.png",
             "photo_alt": "Photo of the person who reviewed",
             "name": "Rajesh Iyer",
             "role": "Retired Bank Officer",
