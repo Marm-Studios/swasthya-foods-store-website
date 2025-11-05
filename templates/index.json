@@ -101,10 +101,54 @@
             "review": "<p>In my line of work, I see young students who spend long hours studying, often skipping meals or relying on quick snacks. At our home, we recently switched to the Multigrain Flour from this brand and the difference is noticeable. We feel lighter, more energetic and it’s easy to continue long term. I’ve recommended it to my staff and students' families as well. Gradually, small changes lead to better lifestyles.</p>",
             "lazyload": true
           }
+        },
+        "review_pHrWdF": {
+          "type": "review",
+          "settings": {
+            "photo_alt": "Photo of the person who reviewed",
+            "name": "Neha Sharma",
+            "role": "Yoga Instructor",
+            "review": "<p>I’ve always believed that what we eat becomes our energy on the mat. Their Multigrain Flour feels light yet wholesome - I don’t experience that post-meal heaviness anymore. My rotis stay soft even after a few hours, which is great for my early-morning classes. It’s become an everyday part of my routine.</p>",
+            "lazyload": true
+          }
+        },
+        "review_KWVLVa": {
+          "type": "review",
+          "settings": {
+            "photo_alt": "Photo of the person who reviewed",
+            "name": "Arjun Patel",
+            "role": "Fitness Coach",
+            "review": "<p>As someone who guides people to focus on long-term health, I appreciate products that are simple and transparent. The Protein Flour blend is balanced - not chalky, not artificial. It keeps me full without feeling bloated, and my clients actually <em>enjoy</em> the taste. That says a lot. It’s a clean swap from regular atta, especially for those working on muscle recovery.</p>",
+            "lazyload": true
+          }
+        },
+        "review_6d6GwH": {
+          "type": "review",
+          "settings": {
+            "photo_alt": "Photo of the person who reviewed",
+            "name": "Riya Deshpande",
+            "role": "Marketing Professional & Mother",
+            "review": "<p>As a mom, I’m very selective about what I feed my family. Their Multigrain Flour has been a lovely change - my kids didn’t notice anything different in taste, but I feel better knowing they're getting better nutrition. The chapatis really do stay soft, and the aroma when cooking is so fresh. It’s a small switch that feels meaningful.</p>",
+            "lazyload": true
+          }
+        },
+        "review_Jdrgdh": {
+          "type": "review",
+          "settings": {
+            "photo_alt": "Photo of the person who reviewed",
+            "name": "Rajesh Iyer",
+            "role": "Retired Bank Officer",
+            "review": "<p>I was advised to manage my sugar levels and look at healthier grain options. This flour has been easy on digestion, and I feel lighter after meals. I didn’t have to compromise on taste or give up rotis. My wife also enjoys making it because it blends well and doesn’t get sticky while kneading.</p>",
+            "lazyload": true
+          }
         }
       },
       "block_order": [
-        "review_wEVzew"
+        "review_wEVzew",
+        "review_pHrWdF",
+        "review_KWVLVa",
+        "review_6d6GwH",
+        "review_Jdrgdh"
       ],
       "settings": {
         "heading": "Trusted by Experts, Love by Families",
