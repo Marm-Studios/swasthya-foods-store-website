@@ -279,112 +279,9 @@
   <script src="{{ 'theme-editor.js' | asset_url }}" defer="defer"></script>
 {%- endif -%}
 
-{% comment %}
-  <section id="reviews-{{ section.id }}" class="reviews-section py-12">
-    <div class="container mx-auto px-4">
-      {% if section.settings.heading != blank %}
-        {% comment %} <header class="mb-6"> {% endcomment %}
-        <h2 class="title h2">{{ section.settings.heading }}</h2>
-        {% if section.settings.subheading != blank %}
-          <p class="text-sm text-muted mt-2">{{ section.settings.subheading }}</p>
-        {% endif %}
-        {% comment %} </header> {% endcomment %}
-      {% endif %}
-
-      <div class="reviews-slider-wrapper">
-        <div
-          class="reviews-slider"
-          data-section-id="{{ section.id }}"
-          data-autoplay="{{ section.settings.autoplay }}"
-          data-autoplay-speed="{{ autoplay_ms }}"
-          data-show-arrows="{{ section.settings.show_arrows }}"
-          data-show-dots="{{ section.settings.show_dots }}"
-          data-slides-to-show="{{ section.settings.slides_to_show }}"
-        >
-          {% for block in section.blocks %}
-            {% if block.type == 'review' %}
-              <div class="review-slide p-4" data-block-id="{{ block.id }}">
-                <div class="review-card rounded-lg p-6 shadow-sm bg-white">
-                  <div class="review-top flex items-center gap-4 mb-4">
-                    {% if block.settings.photo != blank %}
-                      <div class="review-photo w-14 h-14 rounded-full overflow-hidden flex-shrink-0">
-                        <img
-                          src="{{ block.settings.photo | image_url: width: 160 }}"
-                          srcset="{{ block.settings.photo | image_url: width: 320 }} 2x"
-                          alt="{{ block.settings.photo_alt | default: block.settings.name | escape }}"
-                          class="w-full h-full object-cover"
-                          loading="{% if block.settings.lazyload %}lazy{% endif %}"
-                          height="auto"
-                          width="auto"
-                        >
-                      </div>
-                    {% endif %}
-                    <div class="review-meta">
-                      {% if block.settings.name != blank %}
-                        <div class="text-sm font-medium">{{ block.settings.name }}</div>
-                      {% endif %}
-                      {% if block.settings.role != blank %}
-                        <div class="text-xs text-muted">{{ block.settings.role }}</div>
-                      {% endif %}
-                    </div>
-                  </div>
-
-                  <div class="review-body text-sm prose">
-                    {% if block.settings.review != blank %}
-                      {{ block.settings.review }}
-                    {% endif %}
-                  </div>
-
-                  {% if block.settings.rating and block.settings.rating > 0 %}
-                    <div class="review-rating mt-4" aria-hidden="true">
-                      {%- assign r = block.settings.rating | plus: 0 -%}
-                      {% for i in (1..5) %}
-                        {% if i <= r %}
-                          <svg
-                            class="inline-block w-4 h-4 text-yellow-400"
-                            viewBox="0 0 20 20"
-                            fill="currentColor"
-                            aria-hidden="true"
-                          >
-                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.966a1 1 0 00.95.69h4.175c.969 0 1.371 1.24.588 1.81l-3.382 2.455a1 1 0 00-.364 1.118l1.286 3.966c.3.921-.755 1.688-1.54 1.118L10 15.347l-3.49 2.382c-.785.57-1.84-.197-1.54-1.118l1.286-3.966a1 1 0 00-.364-1.118L2.51 9.393c-.783-.57-.38-1.81.588-1.81H7.273a1 1 0 00.95-.69L9.509 2.927z"></path>
-                          </svg>
-                        {% else %}
-                          <svg
-                            class="inline-block w-4 h-4 text-gray-300"
-                            viewBox="0 0 20 20"
-                            fill="currentColor"
-                            aria-hidden="true"
-                          >
-                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.966a1 1 0 00.95.69h4.175c.969 0 1.371 1.24.588 1.81l-3.382 2.455a1 1 0 00-.364 1.118l1.286 3.966c.3.921-.755 1.688-1.54 1.118L10 15.347l-3.49 2.382c-.785.57-1.84-.197-1.54-1.118l1.286-3.966a1 1 0 00-.364-1.118L2.51 9.393c-.783-.57-.38-1.81.588-1.81H7.273a1 1 0 00.95-.69L9.509 2.927z"></path>
-                          </svg>
-                        {% endif %}
-                      {% endfor %}
-                    </div>
-                  {% endif %}
-                </div>
-              </div>
-            {% endif %}
-          {% endfor %}
-        </div>
-
-        {% if section.settings.show_dots %}
-          <div class="reviews-dots mt-4" data-dots-for="{{ section.id }}"></div>
-        {% endif %}
-
-        {% if section.settings.show_arrows %}
-          <div class="reviews-arrows mt-4 flex justify-between">
-            <button class="review-prev btn" aria-label="Previous">‹</button>
-            <button class="review-next btn" aria-label="Next">›</button>
-          </div>
-        {% endif %}
-      </div>
-    </div>
-  </section>
-{% endcomment %}
-
 {% schema %}
 {
-  "name": "Reviews slider",
+  "name": "Reviews slider (custom)",
   "tag": "section",
   "class": "section",
   "disabled_on": {
@@ -454,44 +351,6 @@
     }
   ],
   "max_blocks": 20,
-  "presets": [{ "name": "Reviews slider", "category": "Home" }]
+  "presets": [{ "name": "Reviews slider (custom)", "category": "Home" }]
 }
 {% endschema %}
-
-{% stylesheet %}
-  /* simple minimal styles — move to theme CSS / tailwind instead */
-  .reviews-slider {
-    display: flex;
-    gap: 1rem;
-    overflow: hidden;
-  }
-  .review-slide {
-    min-width: 100%;
-    box-sizing: border-box;
-  }
-  @media (min-width: 768px) {
-    /* If JS doesn't handle slides-per-view, the CSS below is a simple multi-column fallback */
-    .reviews-slider[data-slides-to-show='2'] .review-slide {
-      min-width: 50%;
-    }
-    .reviews-slider[data-slides-to-show='3'] .review-slide {
-      min-width: 33.333%;
-    }
-    .reviews-slider[data-slides-to-show='4'] .review-slide {
-      min-width: 25%;
-    }
-  }
-{% endstylesheet %}
-
-{% javascript %}
-  // pseudo - call your existing init function with the element
-  document.querySelectorAll('.reviews-slider').forEach((el) => {
-    initSlideshow(el, {
-      autoplay: el.dataset.autoplay === 'true',
-      autoplaySpeed: Number(el.dataset.autoplaySpeed),
-      slidesToShow: Number(el.dataset.slidesToShow),
-      arrows: el.dataset.showArrows === 'true',
-      dots: el.dataset.showDots === 'true',
-    });
-  });
-{% endjavascript %}

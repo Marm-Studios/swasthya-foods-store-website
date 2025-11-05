@@ -38,11 +38,7 @@
           }
         }
       },
-      "block_order": [
-        "heading",
-        "text",
-        "button"
-      ],
+      "block_order": ["heading", "text", "button"],
       "settings": {
         "image": "shopify://shop_images/landing_page_banner.jpg",
         "image_overlay_opacity": 40,
@@ -91,22 +87,13 @@
     },
     "product_reviews": {
       "type": "main-reviews-slideshow_ct",
-      "blocks": {
-      },
-      "block_order": [
-        "slide_W9AFMY",
-        "slide_gbLk36"
-      ],
-      "name": "t:sections.slideshow.presets.name",
+      "blocks": {},
+      "block_order": [],
       "settings": {
         "layout": "grid",
-        "slide_height": "small",
         "slider_visual": "dots",
         "auto_rotate": true,
-        "change_slides_speed": 3,
-        "image_behavior": "none",
-        "show_text_below": false,
-        "accessibility_info": "Reviews about our products"
+        "change_slides_speed": 3
       }
     },
     "product_benefits": {
@@ -121,11 +108,5 @@
       }
     }
   },
-  "order": [
-    "image_banner",
-    "usp_section",
-    "featured_collection",
-    "product_reviews",
-    "product_benefits"
-  ]
+  "order": ["image_banner", "usp_section", "featured_collection", "product_reviews", "product_benefits"]
 }
