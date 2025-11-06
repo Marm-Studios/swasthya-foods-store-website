@@ -664,7 +664,7 @@
   }
 
   .cart-item__quantity-wrapper {
-    @apply flex! flex-row! items-center! justify-center! gap-4! md:gap-6!;
+    @apply flex! flex-col! min-[420px]:flex-row! items-end! min-[420px]:items-center! justify-center! gap-4! md:gap-6!;
   }
   /* #endregion */
 
