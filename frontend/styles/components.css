@@ -299,7 +299,7 @@
   }
 
   .product-benefits-icon-container_ct {
-    @apply flex! flex-row! items-start! md:flex-col! gap-6! min-[420px]:gap-10!;
+    @apply flex! flex-row! items-start! justify-center! md:flex-col! gap-6! min-[420px]:gap-10!;
   }
 
   .product-benefits-content-block_ct {
