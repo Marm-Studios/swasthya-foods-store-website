@@ -97,22 +97,20 @@
         </span>
       </button>
 
-      {% comment %}
-        {%- if section.settings.auto_rotate -%}
-          <button
-            type="button"
-            class="slideshow__autoplay slider-button{% if section.settings.auto_rotate == false %} slideshow__autoplay--paused{% endif %}"
-            aria-label="{{ 'sections.slideshow.pause_slideshow' | t }}"
-          >
-            <span class="svg-wrapper menu-icon_ct">
-              {{- 'icon-pause.svg' | inline_asset_content -}}
-            </span>
-            <span class="svg-wrapper menu-icon_ct">
-              {{- 'icon-play.svg' | inline_asset_content -}}
-            </span>
-          </button>
-        {%- endif -%}
-      {% endcomment %}
+      {%- if section.settings.auto_rotate -%}
+        <button
+          type="button"
+          class="slideshow__autoplay slider-button{% if section.settings.auto_rotate == false %} slideshow__autoplay--paused{% endif %}"
+          aria-label="{{ 'sections.slideshow.pause_slideshow' | t }}"
+        >
+          <span class="svg-wrapper menu-icon_ct">
+            {{- 'icon-pause.svg' | inline_asset_content -}}
+          </span>
+          <span class="svg-wrapper menu-icon_ct">
+            {{- 'icon-play.svg' | inline_asset_content -}}
+          </span>
+        </button>
+      {%- endif -%}
     </div>
   {%- endif -%}
 
@@ -355,15 +353,6 @@
       "unit": "s",
       "label": "t:sections.slideshow.settings.change_slides_speed.label",
       "default": 5
-    },
-    {
-      "type": "range",
-      "id": "slides_to_show",
-      "label": "Slides to show (desktop)",
-      "min": 1,
-      "max": 4,
-      "step": 1,
-      "default": 3
     }
   ],
   "blocks": [

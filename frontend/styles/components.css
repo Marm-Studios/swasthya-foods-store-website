@@ -341,6 +341,10 @@
   .review-content-container_ct p {
     @apply text-2xl!;
   }
+
+  .slideshow__autoplay {
+    @apply hidden!;
+  }
   /* #endregion */
 
   /* #region MAIN-PAGE */
