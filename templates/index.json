@@ -60,7 +60,9 @@
     "usp_section": {
       "type": "usp-section_ct",
       "name": "USP Section",
-      "settings": {}
+      "settings": {
+        "usp_icon_colour": "orange"
+      }
     },
     "featured_collection": {
       "type": "featured-collection",
@@ -161,8 +163,8 @@
         "subheading": "",
         "slider_visual": "dots",
         "auto_rotate": true,
-        "change_slides_speed": 3,
-        "slides_to_show": 3
+        "change_slides_speed": 2,
+        "slides_to_show": 4
       }
     },
     "product_benefits": {
