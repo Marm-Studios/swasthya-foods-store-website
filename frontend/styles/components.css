@@ -306,6 +306,10 @@
     @apply flex! flex-col! md:flex-row! justify-center! md:justify-start! items-center! text-center! md:text-left! gap-6! basis-1!;
   }
 
+  .product-benefits-content-block_ct p {
+    @apply text-2xl!;
+  }
+
   .reviews-section_ct {
     @apply bg-header! pb-20!;
   }
