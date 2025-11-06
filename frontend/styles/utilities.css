@@ -41,6 +41,10 @@
     @apply h-footer-icon-size! w-footer-icon-size! text-foreground-pri!;
   }
 
+  .social-icon_ct:hover {
+    @apply text-footer!;
+  }
+
   .menu-icon_ct {
     @apply h-menu-icon-size! w-menu-icon-size! text-foreground-pri!;
   }
