@@ -291,7 +291,7 @@
   }
 
   .product-benefits-container_ct img {
-    @apply w-3/4! md:w-auto! mx-auto!;
+    @apply w-9/10! min-[524px]:w-3/4! md:w-auto! mx-auto!;
   }
 
   .product-benefits-container_ct > div:last-child {
@@ -299,11 +299,11 @@
   }
 
   .product-benefits-icon-container_ct {
-    @apply flex! flex-row! items-start! md:flex-col! gap-6!;
+    @apply flex! flex-row! items-start! md:flex-col! gap-6! min-[420px]:gap-10!;
   }
 
   .product-benefits-content-block_ct {
-    @apply flex! flex-col! md:flex-row! justify-center! md:justify-start! items-center! text-center! md:text-left! gap-6!;
+    @apply flex! flex-col! md:flex-row! justify-center! md:justify-start! items-center! text-center! md:text-left! gap-6! basis-1!;
   }
 
   .reviews-section_ct {
@@ -531,7 +531,7 @@
 
   /* #region CART */
   .cart-count-bubble {
-    @apply bg-announcement-bar! text-background-pri! text-base! h-7! w-7! left-7! bottom-6!;
+    @apply bg-announcement-bar! text-background-pri! text-base! h-7! w-7! left-7! bottom-8!;
   }
 
   .drawer__header {
