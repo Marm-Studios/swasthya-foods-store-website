@@ -266,18 +266,6 @@
     @apply flex! flex-row! justify-center! items-start! gap-8! py-10!;
   }
 
-  .usp-icon-wrapper_ct {
-    @apply rounded-full! p-2! aspect-square! h-28! w-28! flex! justify-center! items-center! text-background-pri!;
-  }
-
-  .usp-icon-wrapper_ct--orange {
-    @apply bg-footer!;
-  }
-
-  .usp-icon-wrapper_ct--brown {
-    @apply bg-announcement-bar!;
-  }
-
   .usp-content-block_ct {
     @apply flex! flex-col! justify-center! items-center! gap-4! text-center!;
   }
