@@ -184,7 +184,7 @@
     @apply flex! flex-col! justify-center! items-start! gap-5 text-foreground-pri! text-2xl!;
   }
 
-  .ind-contact-info_ct:hover {
+  .ind-contact-info_ct:hover span {
     @apply text-footer!;
   }
   /* #endregion */
@@ -373,23 +373,27 @@
 
   /* #region CONTACT-PAGE */
   .contact-details-wrapper_ct {
-    @apply flex flex-col justify-start items-start gap-12 py-10!;
+    @apply flex flex-col justify-start items-start gap-14 py-10!;
   }
 
   .ind-contact-details-section_ct {
     @apply flex! flex-col! gap-4!;
   }
 
-  .ind-contact-details-section_ct a:hover {
+  /* .ind-contact-details-section_ct a:hover {
     @apply text-footer!;
-  }
+  } */
 
   .contact-details-heading_ct {
     @apply font-medium! text-4xl!;
   }
 
   .contact-details-text_ct {
-    @apply text-2xl!;
+    @apply text-2xl! flex! flex-row! justify-start! items-center! gap-3!;
+  }
+
+  .contact-details-text_ct:hover span {
+    @apply text-footer!;
   }
 
   .contact .title {

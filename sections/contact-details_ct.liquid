@@ -2,19 +2,36 @@
   {% comment %} page-width--narrow {% endcomment %}
   <div class="page-width contact-details-wrapper_ct">
     <div class="ind-contact-details-section_ct">
-      <h3 class="contact-details-heading_ct">Call us</h3>
-      <a href="tel:{{ settings.contact_phone | escape -}}" class="contact-details-text_ct">
-        {{- settings.contact_phone | escape -}}
+      <h3 class="contact-details-heading_ct">Chat with us</h3>
+      <a href="https://wa.me/{{ settings.contact_phone | escape -}}" class="contact-details-text_ct">
+        <span class="svg-wrapper social-icon_ct">
+          {{- 'icon-whatsapp.svg' | inline_asset_content -}}
+        </span>
+        <span>
+          {{- settings.contact_phone | escape -}}
+        </span>
       </a>
     </div>
     <div class="ind-contact-details-section_ct">
       <h3 class="contact-details-heading_ct">Email us</h3>
-      <a href="mailto:{{settings.contact_email}}" class="contact-details-text_ct">{{ settings.contact_email }}</a>
+      <a href="mailto:{{settings.contact_email}}" class="contact-details-text_ct">
+        <span class="svg-wrapper social-icon_ct">
+          {{- 'icon-mail.svg' | inline_asset_content -}}
+        </span>
+        <span>
+          {{ settings.contact_email }}
+        </span>
+      </a>
     </div>
     <div class="ind-contact-details-section_ct">
-      <h3 class="contact-details-heading_ct">Visit us</h3>
+      <h3 class="contact-details-heading_ct">Manufactured & Marketed by</h3>
       <a href="{{ settings.contact_address_link }}" href="" class="contact-details-text_ct">
-        {{- settings.contact_address_text | escape -}}
+        <span class="svg-wrapper social-icon_ct">
+          {{- 'icon-map-pin.svg' | inline_asset_content -}}
+        </span>
+        <span>
+          {{- settings.contact_address_text | escape -}}
+        </span>
       </a>
     </div>
     <div class="ind-contact-details-section_ct">
@@ -23,5 +40,5 @@
     </div>
   </div>
 
-  <hr class="line-separator_ct">
+  {% comment %} <hr class="line-separator_ct"> {% endcomment %}
 </div>

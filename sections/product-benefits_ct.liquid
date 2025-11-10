@@ -1,19 +1,52 @@
+{%- liquid
+  assign full_width = '100vw'
+  assign widths = '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840'
+
+  if section.settings.image_behavior == 'ambient'
+    assign full_width = '120vw'
+    assign widths = '450, 660, 900, 1320, 1800, 2136, 2400, 3600, 7680'
+  endif
+  assign fetch_priority = 'auto'
+  if section.index == 1
+    assign fetch_priority = 'high'
+  endif
+-%}
+
 <div class="page-width">
   <h2 class="title h2">{{ section.settings.heading }}</h2>
   <div class="product-benefits-container_ct page-width">
     <div>
       {% if section.settings.product_benefits_image != blank %}
         {%- assign img = section.settings.product_benefits_image -%}
-        <img
-          src="{{ img | image_url }}"
-          {% comment %} srcset="{{ img | image_url: width: 400 }} 400w, {{ img | image_url: width: 800 }} 800w, {{ img | image_url: width: 1200 }} 1200w" {% endcomment %}
-          {% comment %} sizes="(max-width: 640px) 100vw, 50vw" {% endcomment %}
-          alt="{{ section.settings.product_image_alt_text | escape }}"
-          loading="{% if section.settings.lazyload %}lazy{% else %}eager{% endif %}"
-          {% comment %} class="w-full h-auto object-cover rounded" {% endcomment %}
-          height="auto"
-          width="auto"
-        >
+        {% comment %}
+          <img
+            src="{{ img | image_url }}"
+            {% comment %} srcset="{{ img | image_url: width: 400 }} 400w, {{ img | image_url: width: 800 }} 800w, {{ img | image_url: width: 1200 }} 1200w" {% endcomment %}
+            {% comment %} sizes="(max-width: 640px) 100vw, 50vw" {% endcomment %}
+            alt="{{ section.settings.product_image_alt_text | escape }}"
+            loading="{% if section.settings.lazyload %}lazy{% else %}eager{% endif %}"
+            {% comment %} class="w-full h-auto object-cover rounded" {% endcomment %}
+            height="auto"
+            width="auto"
+          >
+        {% endcomment %}
+        {%- liquid
+          assign img = section.settings.product_benefits_image
+          assign image_height = img.width | divided_by: img.aspect_ratio
+
+          assign sizes = full_width
+        -%}
+        {{
+          section.settings.product_benefits_image
+          | image_url: width: 3840
+          | image_tag:
+            width: img.width,
+            height: image_height,
+            class: '',
+            sizes: sizes,
+            widths: widths,
+            fetchpriority: fetch_priority
+        }}
       {% endif %}
     </div>
     <div class="product-benefits-icon-container_ct">
