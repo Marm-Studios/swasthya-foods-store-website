@@ -9,7 +9,7 @@
  */
 {
   "current": {
-    "logo": "shopify://shop_images/swasthya_foods_logo_bold.svg",
+    "logo": "shopify://shop_images/swasthya-atta-brand-logo.svg",
     "logo_width": 90,
     "favicon": "shopify://shop_images/favicon_bold.svg",
     "type_header_font": "libre_caslon_text_n4",
@@ -107,7 +107,7 @@
     "sale_badge_color_scheme": "scheme-1",
     "sold_out_badge_color_scheme": "scheme-1",
     "brand_headline": "Swasthya Atta",
-    "brand_image": "shopify://shop_images/swasthya_foods_logo_bold.svg",
+    "brand_image": "shopify://shop_images/swasthya-atta-brand-logo.svg",
     "brand_image_width": 70,
     "contact_address_text": "Ground Floor, The Eminence, Beside Zudio Showroom, Jogani Nagar, Near Prime Arcade, Adajan, Surat - 395009",
     "contact_address_link": "https://maps.app.goo.gl/163LMF1v6VyuFRzH9",
