@@ -236,9 +236,9 @@
                   {{ settings.contact_address_text | escape }}
                 </span>
               </a>
-              <a href="tel:{{settings.contact_phone}}" class="ind-contact-info_ct">
+              <a href="https://wa.me/{{ settings.contact_phone | escape -}}" class="ind-contact-info_ct">
                 <span class="svg-wrapper contact-icon_ct">
-                  {{- 'icon-phone.svg' | inline_asset_content -}}
+                  {{- 'icon-whatsapp.svg' | inline_asset_content -}}
                 </span>
                 <span>
                   {{ settings.contact_phone | escape -}}
