@@ -38,7 +38,7 @@
   }
 
   .social-icon_ct {
-    @apply h-footer-icon-size! w-footer-icon-size! text-foreground-pri!;
+    @apply h-footer-icon-size! w-footer-icon-size! text-foreground-pri! shrink-0!;
   }
 
   .social-icon_ct:hover {

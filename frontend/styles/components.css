@@ -187,18 +187,6 @@
   .ind-contact-info_ct:hover span {
     @apply text-footer!;
   }
-  /* #endregion */
-
-  /* #region COPYRIGHT */
-  .footer__copyright {
-    @apply mt-0!;
-  }
-
-  .copyright__content {
-    @apply text-2xl! text-foreground-pri!;
-    font-family: var(--font-heading-family);
-  }
-  /* #endregion */
 
   .ind-contact-info_ct {
     @apply flex! flex-row! justify-center! items-center gap-2!;
@@ -221,6 +209,19 @@
       margin-top: 0px;
     }
   }
+  /* #endregion */
+
+  /* #region COPYRIGHT */
+  .footer__copyright {
+    @apply mt-0!;
+  }
+
+  .copyright__content {
+    @apply text-2xl! text-foreground-pri!;
+    font-family: var(--font-heading-family);
+  }
+  /* #endregion */
+
   /* #endregion */
 
   /* #region SOCIAL-ICONS */
@@ -746,5 +747,46 @@
   .cart__ctas {
     @apply mt-10!;
   }
+  /* #endregion */
+
+  /* #region POLICY-PAGES */
+  .policy-page-container_ct {
+    @apply text-2xl! text-foreground-pri! mt-12! mb-10!;
+  }
+
+  .policy-page-container_ct p {
+    @apply mb-6!;
+  }
+
+  .policy-page-container_ct h2 {
+    @apply text-4xl! mt-12! mb-6!;
+  }
+
+  .policy-page-container_ct ul {
+    @apply list-disc! list-outside!;
+  }
+
+  .policy-page-container_ct a:hover {
+    @apply text-footer! underline! underline-offset-[0.3rem]!;
+  }
+
+  /* .shopify-policy__container {
+    @apply text-2xl!;
+  }
+
+  .shopify-policy__title {
+    @apply text-left!;
+  }
+
+  .shopify-policy__title h1 {
+    @apply text-heading-pri! font-medium! text-[4rem]! mb-12!;
+  }
+
+  .shopify-policy__title::after {
+  }
+
+  .shopify-policy__container h2 {
+    @apply font-medium! text-4xl! mt-12! mb-5!;
+  } */
   /* #endregion */
 }
