@@ -763,7 +763,7 @@
   }
 
   .policy-page-container_ct ul {
-    @apply list-disc! list-outside!;
+    @apply list-disc! list-outside! mb-6!;
   }
 
   .policy-page-container_ct a:hover {
