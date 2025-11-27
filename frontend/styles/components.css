@@ -220,6 +220,14 @@
     @apply text-2xl! text-foreground-pri!;
     font-family: var(--font-heading-family);
   }
+
+  .footer__content-bottom-wrapper {
+    @apply flex flex-col sm:flex-row justify-center sm:justify-between! gap-6;
+  }
+
+  .footer-developer_ct {
+    @apply text-foreground-pri! text-[1.5rem] text-center! opacity-75;
+  }
   /* #endregion */
 
   /* #endregion */
