@@ -228,6 +228,10 @@
   .footer-developer_ct {
     @apply text-foreground-pri! text-[1.5rem] text-center! opacity-75;
   }
+
+  .footer-developer_ct a {
+    @apply hover:underline underline-offset-4;
+  }
   /* #endregion */
 
   /* #endregion */
