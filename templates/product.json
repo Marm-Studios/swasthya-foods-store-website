@@ -70,7 +70,7 @@
           "settings": {
             "heading": "How to use",
             "icon": "question_mark",
-            "content": "<p>Kneed dough in hot water, cover it with cloth for 5 minutes and then it's ready to make the healthiest rotis.</p>",
+            "content": "{{ product.metafields.custom.usage_instruction | metafield_tag }}",
             "page": ""
           }
         },
