@@ -489,6 +489,22 @@
     @apply mb-14!;
   }
 
+  .product-form__input > .form__label {
+    @apply text-2xl!;
+  }
+
+  .product-form__input--pill input[type='radio'] + label {
+    @apply rounded-none! text-3xl!;
+  }
+
+  .product-form__input--pill input[type='radio'] + label:hover {
+    @apply bg-heading-pri!;
+  }
+
+  .product-form__input--pill input[type='radio']:not(:checked) + label:hover {
+    @apply text-background-pri!;
+  }
+
   .quantity__label {
     @apply text-2xl!;
   }
