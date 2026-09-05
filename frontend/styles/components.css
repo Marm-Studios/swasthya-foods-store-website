@@ -480,6 +480,13 @@
   }
   /* #endregion */
 
+  /* #region PRODUCT-OPTIONS-MENU */
+  .product__view-details .icon {
+    @apply hidden!;
+    /* @apply h-18! w-18! flex! justify-center! items-center!; */
+  }
+  /* #endregion */
+
   /* #region IND-PRODUCT-PAGE */
   .product__info-container .product__title h1 {
     @apply text-7xl! text-heading-pri!;
